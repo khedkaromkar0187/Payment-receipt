@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Receipt</title>
+    <style>
+        body{
+            background-color: #F3E7C4;
+        }
+        .receipt-container{
+            width: 80%;
+            border: 1px solid gray;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(199, 186, 186);
+        }
+        .receipt-header{
+            border-bottom: 1px dashed gray;
+        }
+        .brand-logo{
+            width:100px;
+            display: block;
+            margin: 0 auto;
+        }
+        .brand-title{
+            text-align: center;
+        }
+        .brand-address{
+            text-align: right;
+        }
+        .brand-number{
+            text-align: right;
+        }
+        .receipt-body{
+            position: relative;
+            border-bottom: 1px dashed gray;
+           
+        }
+        .receipt-title{
+            text-align: center;
+            font-size: 25px;
+            margin:30px 0;
+        }
+        .receipt-detail{
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+           
+
+        }
+        .receipt-detail-key{
+            color: gray;
+            width: 30%;
+        }
+        .receipt-detail-value{
+            font-weight: bold;
+            border-bottom:1px dashed gray ;
+            width:50%;
+        }
+        .accountant-signature{
+            text-align: right;
+            margin-top: 100px;
+        }
+        .stamp{
+            width: 150px;
+            position: absolute;
+            right:0;
+            bottom:0;
+            bottom: 20px;
+            transform: rotate(-30deg);
+
+        }
+        .receipt-footer{
+            text-align: center;
+            padding: 20px 0;
+            margin: 20px;
+            background-color: #bdc78d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="receipt-container">
+       
+
+        <div class="receipt-header">
+            <img src="logo.jpg" id="logo" class="brand-logo"/>
+         <h2 class="brand-title">S.B patil collage of Engineering</h2>
+         <p class="brand-address">Indapur,vangali,</br> pune -413106</p>
+         <p class="brand-number">+91 7542546565</p>
+        </div>
+
+        <div class="receipt-body">
+            <h3 class="receipt-title">Payment Recept</h3>
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">receipt no.:</div>
+                <div class="receipt-detail-value">1234567890</div>
+            </div>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">Amount.:</div>
+                <div class="receipt-detail-value">15000/-</div>
+            </div>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">Payment mode.:</div>
+                <div class="receipt-detail-value">UPI</div>
+            </div>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">Payment Date.:</div>
+                <div class="receipt-detail-value">23 feb 2025</div>
+            </div>
+            <img src="./pngwing.com.png" class="stamp"/>
+
+            <p class="accountant-signature">Accountant Signature</p>
+            <br/> <br/>  <br/>  <br/>
+
+        </div>
+        <p>this is a computer generated receipt and does not require any Signature</p>
+
+        <div class="receipt-footer">
+            thank you for payment
+            
+
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
